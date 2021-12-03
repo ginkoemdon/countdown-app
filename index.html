@@ -5,24 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Countdown</title>
+    <title>Countdown</title>
     <link href='styles.css' rel="stylesheet">
 </head>
 
 <body>
-    <h1> Countdown</h1>
-    <form id="form">
-        <label id="h2" for="start">Pick a Countdown Date:</label>
-        <br>
-        <input type="date" id="start">
-        <br>
-        <button type="submit">Start Countdown</button>
-    </form>
+    <div id="container">
+        <h1> Countdown</h1>
+        <form id="form">
+            <h3>Pick a Countdown Date:</h3>
+            <br>
+            <label for="start">Give your date a Title</label>
+            <input type="text" id="datetitle" placeholder="Name of Date">
+            <br>
+            <label> Choose a date</label>
+            <br>
+            <input type="date" id="start">
+            <br>
+            <button type="submit">Start Countdown</button>
+        </form>
+        <div id="countdown-timer"></div>
 
-    <div id="date-select"></div>
+        <div id="final-countdown">
+            <p id="countdown"></p>
+        </div>
+
+        <button id="stop" hidden>Stop Countdown</button>
+
+        <div id="date-select"></div>
+    </div>
     <footer>
-    <p> mtm6302 - Assignment 3 <br>
-        &copy; Ginko Emdon 2021</p>
+        <p> mtm6302 - Assignment 3 <br>
+            &copy; Ginko Emdon 2021</p>
     </footer>
     <script src="script.js"></script>
 </body>
