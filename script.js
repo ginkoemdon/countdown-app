@@ -1,9 +1,11 @@
 // Get all important elements from the page
 const $form = document.getElementById('form')
-const $dateTitle = document.getElementById('SelectedDate')
+const $dateTitle = document.getElementById('date-title')
 const $finalDate = document.getElementById('start')
 const $stop = document.getElementById('stop')
+const $countdownContainer = document.getElementById('countdown-container')
 const $countdown = document.getElementById('countdown')
+const $countdownTitle = document.getElementById('countdown-title')
 
 // Set up an global interval identifier
 // We can use this to start and stop the interval countdown
@@ -87,19 +89,20 @@ function onSubmit(event) {
         console.log('countdownRemaining => ', countdownRemaining)
     }, 1000)
 
-    // Make end button appear once I click submit button
-    $stop.hidden = false
-    $form.hidden = true
+    $countdownTitle.textContent = $dateTitle.value
 
+    // Make end button appear once I click submit button
+    $form.hidden = true
+    $stop.hidden = false
+    $countdownContainer.hidden = false
 }
 // Making so that the stop button hides when clicked and the form appears
 $stop.addEventListener('click', function () {
     clearInterval(interval)
     $stop.hidden = true
     $form.hidden = false
-    $countdown.hidden = true
+    $countdownContainer.hidden = true
 })
-
 
 // registering event listener for the Submit event, and it passing the function so that it can be called 
 $form.addEventListener('submit', onSubmit)

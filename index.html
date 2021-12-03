@@ -16,9 +16,9 @@
             <h3>Pick a Countdown Date:</h3>
             <br>
             <label for="start">Give your date a Title</label>
-            <input type="text" id="datetitle" placeholder="Name of Date">
+            <input type="text" id="date-title" placeholder="Name of Date">
             <br>
-            <label> Choose a date</label>
+            <label> Choose a future date</label>
             <br>
             <input type="date" id="start">
             <br>
@@ -26,7 +26,8 @@
         </form>
         <div id="countdown-timer"></div>
 
-        <div id="final-countdown">
+        <div id="countdown-container" hidden>
+            <h2 id="countdown-title"></h2>
             <p id="countdown"></p>
         </div>
 

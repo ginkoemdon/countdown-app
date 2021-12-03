@@ -9,10 +9,21 @@ h3 {
     margin: 0;
 }
 
-input {
-    margin-bottom: 1rem;
+/* Date Title Output */
+h2{
+    margin: 0;
 }
 
+input {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
 
 
 form {
@@ -24,9 +35,29 @@ form {
     padding: 2rem 0rem 2rem 0;
 }
 
+#countdown-container{
+    background-color: gold;
+    border: rgba(53, 93, 62, 0.548) 4px solid;
+    border-radius: 6rem;
+    width: 25rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
 button {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(53, 93, 62, 0.548);
+    color:whitesmoke; 
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+button:hover{
+    background-color: rgba(145, 180, 155, 0.548);
+    
 }
 
 footer {
