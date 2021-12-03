@@ -3,19 +3,42 @@ body {
     font-family: poppins;
     text-align: center;
     background-color: antiquewhite;
+    font-size: 3vh;
 }
 
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px rgba(53, 93, 62, 0.548);
+}
+
+/* |||||||||| FRONT PAGE - Date Input Form */
 h3 {
-    margin: 0;
+    margin: 0 0 2rem 0;
+
 }
 
-/* Date Title Output */
-h2{
-    margin: 0;
+label {
+    text-align: start;
 }
 
+/* Full Form Styling */
+form {
+    background-color: gold;
+    border: rgba(53, 93, 62, 0.548) 4px solid;
+    border-radius: 2rem;
+    width: 50rem;
+    max-width: 80%;
+    min-width: fit-content;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem 0rem 2rem 0;
+    flex-grow: 4;
+}
+
+/* Input fields of form */
 input {
     margin-bottom: 1rem;
+    font-size: 3vh;
     display: inline-block;
     width: 80%;
     margin: 0 auto;
@@ -23,49 +46,54 @@ input {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    max-width: 60%;
+    min-width: fit-content;
+    display: flex;
+    margin-top: 0.5rem;
 }
 
 
-form {
+/* |||||||||| SECOND PAGE - Countdown */
+
+/* Container holding title output and countdown */
+#countdown-container {
     background-color: gold;
     border: rgba(53, 93, 62, 0.548) 4px solid;
-    border-radius: 1.5em;
-    width: 20rem;
+    border-radius: 2rem;
+    width: fit-content;
     margin: 0 auto;
-    padding: 2rem 0rem 2rem 0;
+    padding: 2rem 3rem 2rem 3rem;
+    flex-grow: 4;
+    font-size: 4vh;
 }
 
-#countdown-container{
-    background-color: gold;
-    border: rgba(53, 93, 62, 0.548) 4px solid;
-    border-radius: 6rem;
-    width: 25rem;
-    margin: 0 auto;
-    padding: 2rem 1rem 2rem 1rem;
+/* Date Title Output */
+h2 {
+    margin: 0;
 }
 
+/* All Button Styles */
 button {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 0.5rem;
     background-color: rgba(53, 93, 62, 0.548);
-    color:whitesmoke; 
+    color: whitesmoke;
     font-weight: bold;
     border-radius: 6px;
     border: 2px solid black;
+    font-size: 3vh;
 }
 
-button:hover{
+button:hover {
     background-color: rgba(145, 180, 155, 0.548);
-    
+
 }
 
 footer {
     background-color: rgba(53, 93, 62, 0.548);
     width: 100%;
-    font-size: 10px;
+    font-size: 2vh;
     position: fixed;
     bottom: 0;
-    height: 2.5rem;
-    padding: 1rem;
 }

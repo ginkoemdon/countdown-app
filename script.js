@@ -7,6 +7,9 @@ const $countdownContainer = document.getElementById('countdown-container')
 const $countdown = document.getElementById('countdown')
 const $countdownTitle = document.getElementById('countdown-title')
 
+myStorage = window.localStorage;
+// Put the object into storage
+
 // Set up an global interval identifier
 // We can use this to start and stop the interval countdown
 let interval
@@ -21,7 +24,8 @@ function toDay(ms) {
 
     if (days > 0) {
         return days
-    } else {
+    }
+    else {
         return 0
     }
 }
@@ -61,9 +65,9 @@ function toSeconds(ms) {
     return remainingSeconds
 }
 
-// declaring a function that will run when the eventLisitner calls it. We know that this function gets called with an event object as an input. 
+// declaring a function that will run when the eventListener calls it. We know that this function gets called with an event object as an input. 
 function onSubmit(event) {
-    // submit usually causes page to refresh this is preventing such behaviour
+    // submit usually causes page to refresh this is preventing such behavior
     event.preventDefault()
     //get the form input and name it finalDate
 

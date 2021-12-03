@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href='styles.css' rel="stylesheet">
 </head>
 
@@ -14,24 +17,25 @@
         <h1> Countdown</h1>
         <form id="form">
             <h3>Pick a Countdown Date:</h3>
-            <br>
+
             <label for="start">Give your date a Title</label>
+              <!-- Date Title Input -->
             <input type="text" id="date-title" placeholder="Name of Date">
-            <br>
-            <label> Choose a future date</label>
-            <br>
+
+            <label>Choose a future date</label>
+            <!-- Date Selector -->
             <input type="date" id="start">
-            <br>
             <button type="submit">Start Countdown</button>
         </form>
-        <div id="countdown-timer"></div>
 
         <div id="countdown-container" hidden>
+            <!-- Output of date title input will display here -->
             <h2 id="countdown-title"></h2>
+            <!-- This is where we will see the countdown display -->
             <p id="countdown"></p>
         </div>
 
-        <button id="stop" hidden>Stop Countdown</button>
+        <button id="stop" hidden><i class="fas fa-stop-circle"></i>Stop Countdown</button>
 
         <div id="date-select"></div>
     </div>
